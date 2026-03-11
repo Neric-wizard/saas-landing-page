@@ -32,19 +32,18 @@ export default function Hero() {
         </motion.div>
 
         {/* Main Heading */}
-        <motion.h1 
-          initial={{ opacity: 0, y: 30 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, delay: 0.2 }}
-          className="text-7xl md:text-8xl font-black text-white mb-6 leading-tight"
-        >
-          Build Faster.
-          <br />
-          <span className="text-transparent bg-clip-text bg-gradient-to-r from-yellow-300 to-pink-300">
-            Scale Better.
-          </span>
-        </motion.h1>
-
+       <motion.h1 
+  initial={{ opacity: 0, y: 30 }}
+  animate={{ opacity: 1, y: 0 }}
+  transition={{ duration: 0.8, ease: "easeOut" }}
+  className="text-4xl md:text-6xl lg:text-7xl font-extrabold text-gray-900 leading-tight"
+>
+  Build, Launch, and Scale
+  <br />
+  <span className="bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 bg-clip-text text-transparent animate-gradient">
+    Your SaaS Product
+  </span>
+</motion.h1>
         {/* Description */}
         <motion.p 
           initial={{ opacity: 0, y: 30 }}

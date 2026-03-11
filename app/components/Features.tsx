@@ -16,7 +16,7 @@ export default function Features() {
         </div>
 
         {/* FEATURE CARDS - Clearer headings */}
-        <div className="grid md:grid-cols-3 gap-8 mt-16">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-16">
 
           <div className="p-8 border border-gray-200 rounded-2xl bg-white shadow-sm hover:shadow-lg transition-all">
             <Zap className="w-14 h-14 text-blue-600 mb-6" strokeWidth={1.5} />

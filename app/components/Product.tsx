@@ -1,137 +1,158 @@
 export default function Product() {
   return (
-    <section className="py-24 bg-gradient-to-b from-white to-gray-50">
+    <section className="py-24 bg-gradient-to-br from-indigo-900 via-purple-900 to-pink-900">
       <div className="max-w-6xl mx-auto px-6">
-        <div className="grid md:grid-cols-2 gap-16 items-center">
+        
+        {/* Section Header - Now with white text on dark bg */}
+        <div className="text-center mb-16">
+          <h2 className="text-5xl font-bold text-white mb-4">
+            Powerful Dashboard
+          </h2>
+          <p className="text-xl text-purple-200 max-w-2xl mx-auto">
+            Everything you need to manage your SaaS in one beautiful interface
+          </p>
+        </div>
 
-          {/* Left side - Text */}
-          <div>
-            <span className="text-blue-600 font-semibold text-sm uppercase tracking-wider">
-              Product Overview
-            </span>
-           <h2 className="text-4xl font-bold text-gray-900 mt-4 leading-tight">
-  Everything you need to{' '}
-  <span className="text-blue-600">build, launch, and scale</span>
-  {' '}your SaaS
-</h2>
-
-            <p className="mt-6 text-lg text-gray-600 leading-relaxed">
-              Control users, analytics, and subscriptions in one
-              powerful interface designed to grow with your business.
-              No more jumping between different tools.
-            </p>
-
-            <div className="mt-8 space-y-4">
-              <div className="flex items-start gap-3">
-                <div className="w-6 h-6 rounded-full bg-green-100 flex items-center justify-center flex-shrink-0 mt-1">
-                  <span className="text-green-600 text-sm">✓</span>
-                </div>
-                <p className="text-gray-700">
-                  <span className="font-semibold">Real-time analytics</span> — Track user behavior and revenue metrics
-                </p>
+        {/* Main Content - Two columns */}
+        <div className="grid md:grid-cols-2 gap-12 items-center">
+          
+          {/* Left side - Feature List with Icons */}
+          <div className="space-y-8">
+            <div className="flex gap-4 items-start">
+              <div className="w-12 h-12 bg-purple-500 rounded-xl flex items-center justify-center text-2xl font-bold text-white shadow-lg">
+                1
               </div>
-              <div className="flex items-start gap-3">
-                <div className="w-6 h-6 rounded-full bg-green-100 flex items-center justify-center flex-shrink-0 mt-1">
-                  <span className="text-green-600 text-sm">✓</span>
-                </div>
-                <p className="text-gray-700">
-                  <span className="font-semibold">Subscription management</span> — Handle plans, upgrades, and cancellations
-                </p>
-              </div>
-              <div className="flex items-start gap-3">
-                <div className="w-6 h-6 rounded-full bg-green-100 flex items-center justify-center flex-shrink-0 mt-1">
-                  <span className="text-green-600 text-sm">✓</span>
-                </div>
-                <p className="text-gray-700">
-                  <span className="font-semibold">Team collaboration</span> — Invite team members with role-based access
-                </p>
+              <div>
+                <h3 className="text-2xl font-bold text-white mb-2">Real-time Analytics</h3>
+                <p className="text-purple-200">Track user behavior, revenue, and growth metrics as they happen</p>
               </div>
             </div>
 
-            <button className="mt-10 bg-black text-white px-8 py-4 rounded-xl font-semibold hover:bg-gray-800 transition-colors shadow-lg">
+            <div className="flex gap-4 items-start">
+              <div className="w-12 h-12 bg-pink-500 rounded-xl flex items-center justify-center text-2xl font-bold text-white shadow-lg">
+                2
+              </div>
+              <div>
+                <h3 className="text-2xl font-bold text-white mb-2">Subscription Hub</h3>
+                <p className="text-purple-200">Manage plans, upgrades, cancellations all in one place</p>
+              </div>
+            </div>
+
+            <div className="flex gap-4 items-start">
+              <div className="w-12 h-12 bg-indigo-500 rounded-xl flex items-center justify-center text-2xl font-bold text-white shadow-lg">
+                3
+              </div>
+              <div>
+                <h3 className="text-2xl font-bold text-white mb-2">Team Access</h3>
+                <p className="text-purple-200">Invite team members with custom roles and permissions</p>
+              </div>
+            </div>
+
+            <button className="mt-8 bg-white text-purple-900 px-8 py-4 rounded-xl font-bold text-lg hover:bg-purple-100 transition-all shadow-2xl">
               Explore Dashboard →
             </button>
           </div>
 
-          {/* Right side - Dashboard Preview with REAL CONTENT */}
+          {/* Right side - Dashboard Preview Card */}
           <div className="relative">
-            <div className="bg-white rounded-2xl shadow-2xl border border-gray-200 overflow-hidden">
-              {/* MacOS-style window controls */}
-              <div className="bg-gray-100 px-4 py-3 border-b border-gray-200 flex items-center gap-2">
+            {/* Main Dashboard Card */}
+            <div className="bg-white/10 backdrop-blur-xl rounded-3xl border border-white/20 shadow-2xl overflow-hidden">
+              
+              {/* Window Header */}
+              <div className="bg-white/20 px-6 py-4 flex items-center gap-2 border-b border-white/10">
                 <div className="w-3 h-3 rounded-full bg-red-400"></div>
                 <div className="w-3 h-3 rounded-full bg-yellow-400"></div>
                 <div className="w-3 h-3 rounded-full bg-green-400"></div>
-                <span className="text-sm text-gray-500 ml-2">Dashboard</span>
+                <span className="text-sm text-white/70 ml-2 font-medium">Dashboard</span>
               </div>
               
               {/* Dashboard Content */}
-              <div className="p-6">
-                {/* Stats Cards */}
-                <div className="grid grid-cols-2 gap-4 mb-6">
-                  <div className="bg-blue-50 p-4 rounded-xl">
-                    <p className="text-sm text-blue-600 font-medium">Total Users</p>
-                    <p className="text-2xl font-bold text-gray-900">12,345</p>
-                    <p className="text-xs text-green-600 mt-1">↑ 12% this week</p>
+              <div className="p-6 space-y-6">
+                
+                {/* Stats Cards Row */}
+                <div className="grid grid-cols-2 gap-4">
+                  <div className="bg-white/20 backdrop-blur-sm p-5 rounded-2xl border border-white/10">
+                    <p className="text-white/70 text-sm mb-1">Total Users</p>
+                    <p className="text-4xl font-bold text-white">12.3K</p>
+                    <p className="text-green-300 text-xs mt-2 flex items-center gap-1">
+                      ↑ +12% this month
+                    </p>
                   </div>
-                  <div className="bg-purple-50 p-4 rounded-xl">
-                    <p className="text-sm text-purple-600 font-medium">Revenue</p>
-                    <p className="text-2xl font-bold text-gray-900">$49,283</p>
-                    <p className="text-xs text-green-600 mt-1">↑ 8% this week</p>
+                  <div className="bg-white/20 backdrop-blur-sm p-5 rounded-2xl border border-white/10">
+                    <p className="text-white/70 text-sm mb-1">Revenue</p>
+                    <p className="text-4xl font-bold text-white">$49.2K</p>
+                    <p className="text-green-300 text-xs mt-2 flex items-center gap-1">
+                      ↑ +8% this month
+                    </p>
                   </div>
                 </div>
 
                 {/* Activity Chart */}
-                <div className="mb-6">
-                  <p className="text-sm font-medium text-gray-700 mb-3">User Activity</p>
-                  <div className="flex items-end gap-2 h-24">
-                    <div className="w-1/6 bg-blue-500 rounded-t-lg h-16"></div>
-                    <div className="w-1/6 bg-blue-500 rounded-t-lg h-20"></div>
-                    <div className="w-1/6 bg-blue-500 rounded-t-lg h-24"></div>
-                    <div className="w-1/6 bg-blue-500 rounded-t-lg h-16"></div>
-                    <div className="w-1/6 bg-blue-500 rounded-t-lg h-12"></div>
-                    <div className="w-1/6 bg-blue-500 rounded-t-lg h-20"></div>
-                    <div className="w-1/6 bg-blue-500 rounded-t-lg h-8"></div>
+                <div className="bg-white/20 backdrop-blur-sm p-5 rounded-2xl border border-white/10">
+                  <div className="flex justify-between items-center mb-4">
+                    <p className="text-white font-medium">User Activity</p>
+                    <p className="text-white/60 text-xs">Last 30 days</p>
+                  </div>
+                  <div className="flex items-end justify-between gap-1 h-28">
+                    <div className="w-8 bg-gradient-to-t from-blue-400 to-purple-400 rounded-t-lg h-16"></div>
+                    <div className="w-8 bg-gradient-to-t from-blue-400 to-purple-400 rounded-t-lg h-20"></div>
+                    <div className="w-8 bg-gradient-to-t from-blue-400 to-purple-400 rounded-t-lg h-28"></div>
+                    <div className="w-8 bg-gradient-to-t from-blue-400 to-purple-400 rounded-t-lg h-24"></div>
+                    <div className="w-8 bg-gradient-to-t from-blue-400 to-purple-400 rounded-t-lg h-20"></div>
+                    <div className="w-8 bg-gradient-to-t from-blue-400 to-purple-400 rounded-t-lg h-16"></div>
+                    <div className="w-8 bg-gradient-to-t from-blue-400 to-purple-400 rounded-t-lg h-12"></div>
                   </div>
                 </div>
 
-                {/* Recent Activity List */}
-                <div>
-                  <p className="text-sm font-medium text-gray-700 mb-3">Recent signups</p>
+                {/* Recent Users */}
+                <div className="bg-white/20 backdrop-blur-sm p-5 rounded-2xl border border-white/10">
+                  <p className="text-white font-medium mb-3">Recent Users</p>
                   <div className="space-y-3">
                     <div className="flex items-center gap-3">
-                      <div className="w-8 h-8 bg-gray-200 rounded-full"></div>
-                      <div>
-                        <p className="text-sm font-medium">Sarah Chen</p>
-                        <p className="text-xs text-gray-500">sarah@techstart.com</p>
+                      <div className="w-10 h-10 bg-gradient-to-br from-pink-400 to-purple-400 rounded-xl flex items-center justify-center text-white font-bold">
+                        SC
                       </div>
-                      <span className="ml-auto text-xs bg-green-100 text-green-700 px-2 py-1 rounded-full">Active</span>
+                      <div>
+                        <p className="text-white font-medium">Sarah Chen</p>
+                        <p className="text-white/60 text-sm">sarah@techstart.com</p>
+                      </div>
+                      <span className="ml-auto bg-green-500/20 text-green-300 text-xs px-3 py-1 rounded-full border border-green-500/30">
+                        Active
+                      </span>
                     </div>
                     <div className="flex items-center gap-3">
-                      <div className="w-8 h-8 bg-gray-200 rounded-full"></div>
-                      <div>
-                        <p className="text-sm font-medium">Michael Okonkwo</p>
-                        <p className="text-xs text-gray-500">michael@scaleup.com</p>
+                      <div className="w-10 h-10 bg-gradient-to-br from-blue-400 to-indigo-400 rounded-xl flex items-center justify-center text-white font-bold">
+                        MO
                       </div>
-                      <span className="ml-auto text-xs bg-green-100 text-green-700 px-2 py-1 rounded-full">Active</span>
+                      <div>
+                        <p className="text-white font-medium">Michael Okonkwo</p>
+                        <p className="text-white/60 text-sm">michael@scaleup.com</p>
+                      </div>
+                      <span className="ml-auto bg-green-500/20 text-green-300 text-xs px-3 py-1 rounded-full border border-green-500/30">
+                        Active
+                      </span>
                     </div>
                     <div className="flex items-center gap-3">
-                      <div className="w-8 h-8 bg-gray-200 rounded-full"></div>
-                      <div>
-                        <p className="text-sm font-medium">Amina Diallo</p>
-                        <p className="text-xs text-gray-500">amina@build.africa</p>
+                      <div className="w-10 h-10 bg-gradient-to-br from-purple-400 to-pink-400 rounded-xl flex items-center justify-center text-white font-bold">
+                        AD
                       </div>
-                      <span className="ml-auto text-xs bg-yellow-100 text-yellow-700 px-2 py-1 rounded-full">Pending</span>
+                      <div>
+                        <p className="text-white font-medium">Amina Diallo</p>
+                        <p className="text-white/60 text-sm">amina@build.africa</p>
+                      </div>
+                      <span className="ml-auto bg-yellow-500/20 text-yellow-300 text-xs px-3 py-1 rounded-full border border-yellow-500/30">
+                        Pending
+                      </span>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
-            
-            {/* Decorative background blurs */}
-            <div className="absolute -bottom-6 -right-6 w-32 h-32 bg-blue-100 rounded-full -z-10 blur-2xl"></div>
-            <div className="absolute -top-6 -left-6 w-32 h-32 bg-purple-100 rounded-full -z-10 blur-2xl"></div>
-          </div>
 
+            {/* Decorative elements */}
+            <div className="absolute -bottom-6 -right-6 w-40 h-40 bg-pink-500 rounded-full blur-3xl opacity-30 -z-10"></div>
+            <div className="absolute -top-6 -left-6 w-40 h-40 bg-purple-500 rounded-full blur-3xl opacity-30 -z-10"></div>
+          </div>
         </div>
       </div>
     </section>

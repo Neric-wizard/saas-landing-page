@@ -1,27 +1,27 @@
 export default function Navbar() {
   return (
-    <nav className="w-full border-b bg-white">
+    <nav className="w-full bg-gray-900 border-b border-gray-800 fixed top-0 z-50">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 py-4">
         <div className="flex items-center justify-between">
           
-          {/* Logo */}
-          <h1 className="text-xl font-bold">SaaSify</h1>
+          {/* Logo - bright white */}
+          <h1 className="text-2xl font-bold text-white">SaaSify</h1>
 
-          {/* Desktop Menu - Hidden on mobile */}
-          <div className="hidden md:flex gap-6">
-            <a href="#">Features</a>
-            <a href="#">Pricing</a>
-            <a href="#">Testimonials</a>
-            <a href="#">Contact</a>
+          {/* Desktop Menu - better contrast */}
+          <div className="hidden md:flex gap-8">
+            <a href="#" className="text-gray-300 hover:text-white transition">Features</a>
+            <a href="#" className="text-gray-300 hover:text-white transition">Pricing</a>
+            <a href="#" className="text-gray-300 hover:text-white transition">Testimonials</a>
+            <a href="#" className="text-gray-300 hover:text-white transition">Contact</a>
           </div>
 
-          {/* Mobile Menu Button (simple for now) */}
-          <button className="md:hidden border p-2 rounded-lg">
+          {/* Mobile Menu Button */}
+          <button className="md:hidden text-white border border-gray-700 p-2 rounded-lg">
             ☰
           </button>
 
-          {/* Desktop Button - Hidden on mobile */}
-          <button className="hidden md:block bg-black text-white px-4 py-2 rounded-lg">
+          {/* Desktop Button */}
+          <button className="hidden md:block bg-purple-600 hover:bg-purple-700 text-white px-6 py-2 rounded-lg font-medium transition">
             Get Started
           </button>
         </div>

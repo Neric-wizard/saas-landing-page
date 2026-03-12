@@ -6,6 +6,7 @@ import Testimonials from "./components/Testimonials";
 import Pricing from "./components/Pricing";
 import Footer from "./components/Footer";
 import Contact from "./components/Contact";
+import BackToTop from "./components/BackToTop";
 
 export default function Home() {
   return (
@@ -18,6 +19,7 @@ export default function Home() {
       <Pricing />
       <Contact /> 
       <Footer />
+      <BackToTop />
     </main>
   );
 }
